@@ -18,7 +18,10 @@ export default function AddTodo({ handleAddTodo }) {
         value={input}
         onChange={(e) => setInput(e.target.value)}
       ></input>
-      <button className="p-2 bg-teal-400 text-white rounded-md" type="submit">
+      <button
+        className="p-2 bg-teal-400 text-white rounded-md hover:opacity-50 transition-opacity"
+        type="submit"
+      >
         Add
       </button>
     </form>

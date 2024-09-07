@@ -6,8 +6,8 @@ import TodoList from "./components/TodoList";
 
 function App() {
   const [todos, setTodos] = useState([
-    { id: 1, value: "111111" },
-    { id: 2, value: "222222" },
+    { id: 1, value: "Learn English" },
+    { id: 2, value: "Learn ReactJS" },
   ]);
 
   const addTodos = (text) => {
@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg mt-16 p-4">
+    <div className="max-w-md max-h-full mx-auto bg-white shadow-lg rounded-lg mt-16 p-4">
       <div className="font-bold text-left text-teal-800 text-2xl uppercase">
         TO-DO LIST
       </div>
