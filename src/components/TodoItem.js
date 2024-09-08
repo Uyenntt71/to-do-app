@@ -8,10 +8,10 @@ export default function TodoItem({ todo, handleDelete }) {
       key={todo.id}
       className="py-2 text-gray-900 font-medium flex justify-between"
     >
-      <div className="mr-2 flex gap-1">
+      <div className="w-full mr-2 grid grid-cols-10 gap-1">
         <input
           type="checkbox"
-          className="appearance-none w-5 h-5
+          className="col-span-1 appearance-none w-5 h-5
            border-2 border-teal-400 rounded-sm
            shadow-sm shadow-gray-100
            flex self-center  items-center justify-center
@@ -20,7 +20,7 @@ export default function TodoItem({ todo, handleDelete }) {
            checked:bg-teal-400 checked:text-white checked:border-none
            checked:after:content-['✓'] checked:after:absolute"
         ></input>
-        <div>{todo.value}</div>
+        <div className="col-span-9">{todo.value}</div>
       </div>
 
       <button className="" onClick={() => handleDelete(todo)}>
